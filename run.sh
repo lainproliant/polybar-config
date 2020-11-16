@@ -11,6 +11,8 @@
 pushd $HOME/.config/polybar
 python generate.py > config
 
+killall polybar
+
 # Start polybar on every monitor
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do

@@ -70,7 +70,7 @@ module-margin-right = 2
 
 modules-left = xmonad xwindow
 modules-center =
-modules-right = memory cpu wlan net battery temperature date
+modules-right = memory cpu wlan battery temperature date
 
 tray-position = none
 
