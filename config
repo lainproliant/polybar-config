@@ -66,9 +66,9 @@ padding-left = 0
 padding-right = 2
 
 module-margin-left = 1
-module-margin-right = 2
+module-margin-right = 1
 
-modules-left = xmonad xwindow
+modules-left = xmonad
 modules-center =
 modules-right = memory cpu wlan battery temperature date
 
@@ -81,7 +81,7 @@ cursor-scroll = ns-resize
 
 [module/xmonad]
 type = custom/script
-exec = /home/lainproliant/.util/xmonad-polybar-workspaces
+exec = /home/lainproliant/.xmonad/xmonad-polybar-workspaces
 tail = true
 
 [module/xwindow]
