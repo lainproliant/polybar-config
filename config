@@ -62,13 +62,10 @@ line-color = #f00
 border-size = 0
 border-color = #00000000
 
-padding-left = 0
-padding-right = 2
-
+padding = 1
 module-margin-left = 1
-module-margin-right = 1
 
-modules-left = xmonad
+modules-left = ewmh xwindow
 modules-center =
 modules-right = memory cpu wlan battery temperature date
 
@@ -83,6 +80,32 @@ cursor-scroll = ns-resize
 type = custom/script
 exec = /home/lainproliant/.xmonad/xmonad-polybar-workspaces
 tail = true
+
+[module/ewmh]
+type = internal/xworkspaces
+pin-workspaces = false
+module-margin-right = 0
+label-monitor = %icon%
+label-monitor-foreground = ${colors.foreground-alt}
+label-monitor-padding-right = 1
+label-active = %icon%
+label-active-foreground = ${colors.foreground-alt}
+label-active-padding-right = 1
+label-occupied = %icon%
+label-occupied-padding-right = 1
+label-urgent = %icon%
+label-urgent-padding-right = 1
+label-empty =
+
+icon-0 = 1;❶
+icon-1 = 2;❷
+icon-2 = 3;❸
+icon-3 = 4;❹
+icon-4 = 5;❺
+icon-5 = 6;❻
+icon-6 = 7;❼
+icon-7 = 8;❽
+icon-8 = 9;❾
 
 [module/xwindow]
 type = internal/xwindow
