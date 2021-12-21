@@ -15,7 +15,7 @@ killall polybar
 
 # Start polybar on every monitor
 if type "xrandr"; then
-  for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+  for m in $(xrandr --query | grep " connected" | grep -v 1280x1024 | cut -d" " -f1); do
     MONITOR=$m polybar --reload xmonad &
   done
 else
